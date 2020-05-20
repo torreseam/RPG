@@ -66,3 +66,24 @@ test("subtracts from player's health", () => {
 
   expect(player.health).toBe(0);
 });
+
+//Function to check Potion was added correctly
+test('adds a potion to the inventory', () => {
+  const player = new Player('Dave');
+  const oldCount = player.inventory.length;
+
+  player.addPotion(new Potion());
+
+  expect(player.inventory.length).toBeGreaterThan(oldCount);
+});
+
+//Remove potion from inventory 
+test('uses a potion from inventory', () => {
+  const player = new Player('Dave');
+  player.inventory = [new Potion(), new Potion(), new Potion()];
+  const oldCount = player.inventory.length;
+
+  player.usePotion(1);
+
+  expect(player.inventory.length).toBeLessThan(oldCount);
+});
