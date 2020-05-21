@@ -1,0 +1,25 @@
+{
+  "name": "rpg",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torreseam/RPG.git"
+  },
+  "author": "Edgar T",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torreseam/RPG/issues"
+  },
+  "homepage": "https://github.com/torreseam/RPG#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}
